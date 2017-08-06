@@ -112,6 +112,9 @@ public class MainActivity extends AppCompatActivity {
                 case 2:
                     Tab3Volunteer tab3 = new Tab3Volunteer();
                     return tab3;
+                case 3:
+                    Tab4Charities tab4 = new Tab4Charities();
+                    return tab4;
                 default:
                     return null;
             }
@@ -120,8 +123,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 4 total pages.
+            return 4;
         }
 
         @Override
@@ -133,6 +136,9 @@ public class MainActivity extends AppCompatActivity {
                     return "New Start";
                 case 2:
                     return "Volunteer";
+                case 3:
+                    return "Charities";
+
             }
             return null;
         }
